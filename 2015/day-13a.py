@@ -1,0 +1,32 @@
+m = {}
+for l in [a.strip() for a in open('day13.input', 'r').readlines()]:
+    cc = l.split()
+    n1 = cc[0]
+    n2 = cc[-1][0:-1]
+    if cc[2] == 'gain':
+        sc = int(cc[3])
+    else:
+        sc = int('-'+cc[3])
+    if n1 in m:
+        m[n1][n2] = sc
+    else:
+        m[n1] = {n2: sc}
+
+from itertools import permutations
+
+names = list(m.keys())
+
+t = 0
+for p in permutations(names[1:], len(names) - 1):
+    table = [names[0]] + list(p)
+    c = 0
+    for i in range(0, len(table)):
+        if i == len(table) - 1:
+            c += m[table[i]][table[0]]
+            c += m[table[0]][table[i]]
+        else:
+            c += m[table[i]][table[i+1]]
+            c += m[table[i+1]][table[i]]
+    t = max(t, c)
+
+print(t)
