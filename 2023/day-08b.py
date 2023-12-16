@@ -3,7 +3,7 @@ import math
 d = ''
 m = {}
 st = []
-for i, l in enumerate([a.strip() for a in open('day-008.input', 'r').readlines()]):
+for i, l in enumerate([a.strip() for a in open('day-08.input', 'r').readlines()]):
     if i == 0:
         d = l
     elif i >= 2:

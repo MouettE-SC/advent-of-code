@@ -1,7 +1,7 @@
 import re
 
 t = 0
-for l in open('day05.input', 'r').readlines():
+for l in open('day-05.input', 'r').readlines():
     l = l.strip()
     nb_vowels = len(re.sub('[^aeiou]', '', l))
     if nb_vowels < 3:

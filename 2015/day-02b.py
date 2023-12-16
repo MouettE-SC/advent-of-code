@@ -1,5 +1,5 @@
 t = 0
-for l in open('day02.input', 'r').readlines():
+for l in open('day-02.input', 'r').readlines():
     l = l.strip()
     sz1 = [int(a) for a in l.split("x")]
     sz2 = [a for a in sz1 if a != max(sz1)]

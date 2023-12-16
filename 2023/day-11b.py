@@ -2,7 +2,7 @@ from itertools import combinations
 
 grid = []
 
-for l in [a.strip() for a in open('day-011.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-11.input', 'r').readlines()]:
     if l.count('.') == len(l):
         grid.append(['!' for c in l])
     else:

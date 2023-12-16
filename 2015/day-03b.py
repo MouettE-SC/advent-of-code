@@ -3,7 +3,7 @@ c_coord2 = [0, 0]
 houses = set()
 houses.add((0, 0))
 i = 0
-for c in open('day03.input', 'r').read():
+for c in open('day-03.input', 'r').read():
     c_coord = c_coord1 if i % 2 == 0 else c_coord2
     if c == '^':
         c_coord[1] += 1

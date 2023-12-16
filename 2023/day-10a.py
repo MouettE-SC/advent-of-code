@@ -1,5 +1,5 @@
 grid = []
-for line in [a.strip() for a in open('day-010.input', 'r').readlines()]:
+for line in [a.strip() for a in open('day-10.input', 'r').readlines()]:
     grid.append([c for c in line])
 
 st = []

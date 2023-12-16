@@ -1,5 +1,5 @@
 g = []
-for l in [a.strip() for a in open('day18.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-18.input', 'r').readlines()]:
     g.append([c for c in l])
 
 

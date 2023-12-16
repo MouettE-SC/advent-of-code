@@ -2,7 +2,7 @@ from itertools import product
 
 data = []
 
-for l in [a.strip() for a in open('day15.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-15.input', 'r').readlines()]:
     cc = l.split(": ")
     cc2 = cc[1].split(", ")
     data.append([int(a.split()[1]) for a in cc2])

@@ -131,7 +131,7 @@ class GameState:
         return ns
 
 boss = []
-for l in [a.strip() for a in open('day22.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-22.input', 'r').readlines()]:
     boss.append(int(l.split(": ")[1]))
 
 

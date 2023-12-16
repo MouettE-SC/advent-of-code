@@ -53,7 +53,7 @@ class C:
 
 
 cmds = []
-for l in open('day07.input', 'r').readlines():
+for l in open('day-07.input', 'r').readlines():
     cmds.append(C(l.strip()))
 
 res = {}

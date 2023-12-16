@@ -1,6 +1,6 @@
 from itertools import combinations
 
-conts = [int(a.strip()) for a in open('day17.input', 'r').readlines()]
+conts = [int(a.strip()) for a in open('day-17.input', 'r').readlines()]
 
 for i in range(1, len(conts)+1):
     t = 0

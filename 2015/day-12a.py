@@ -16,7 +16,7 @@ def analyse(start):
         t += start
 
 
-data = json.load(open('day12.input'))
+data = json.load(open('day-12.input'))
 
 analyse(data)
 print(t)

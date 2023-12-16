@@ -1,6 +1,6 @@
 tl = 0
 tc = 0
-for l in [a.strip() for a in open('day08.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-08.input', 'r').readlines()]:
     skip = 0
     tl += len(l)
     l = l[1:-1]

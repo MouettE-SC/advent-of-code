@@ -30,7 +30,7 @@ def numlegal(s, c):
     return numlegal('#'+s[1:], c) + numlegal(s[1:], c)
 
 
-springs = [c.strip().split() for c in open("day-012.input").readlines()]
+springs = [c.strip().split() for c in open("day-12.input").readlines()]
 ss = [[c[0],tuple(int(d) for d in c[1].split(','))] for c in springs]
 print("Part 1 total:", sum(numlegal(s, c) for [s, c] in ss))
 

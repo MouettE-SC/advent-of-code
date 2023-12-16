@@ -3,7 +3,7 @@
 
 import re
 
-input = open('day19.input').read()
+input = open('day-19.input').read()
 
 molecule = input.split('\n')[-1][::-1]
 reps = {m[1][::-1]: m[0][::-1]

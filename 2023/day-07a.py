@@ -1,4 +1,4 @@
-lines = [l.strip() for l in open('day-007.input', 'r').readlines()]
+lines = [l.strip() for l in open('day-07.input', 'r').readlines()]
 
 order = '23456789TJQKA'
 

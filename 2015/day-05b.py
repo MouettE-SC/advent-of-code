@@ -1,5 +1,5 @@
 t = 0
-for l in open('day05.input', 'r').readlines():
+for l in open('day-05.input', 'r').readlines():
     l = l.strip()
     pl = False
     for i in range(0, len(l)-1):

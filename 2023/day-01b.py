@@ -1,5 +1,5 @@
 t = 0
-lines = open('day-001.input').readlines()
+lines = open('day-01.input').readlines()
 
 rs = {'one': '1',
       'two': '2',

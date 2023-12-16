@@ -17,7 +17,7 @@ def run(l: str):
     return r
 
 
-cl = open('day10.input', 'r').read()
+cl = open('day-10.input', 'r').read()
 
 for _ in range(0, 50):
     cl = run(cl)

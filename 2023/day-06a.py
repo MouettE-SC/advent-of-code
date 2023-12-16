@@ -1,4 +1,4 @@
-lines = open('day-006.input', 'r').readlines()
+lines = open('day-06.input', 'r').readlines()
 times = [int(t) for t in lines[0].split(':')[1].strip().split()]
 dists = [int(d) for d in lines[1].split(':')[1].strip().split()]
 print(times)

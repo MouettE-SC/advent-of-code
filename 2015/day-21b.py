@@ -1,7 +1,7 @@
 from itertools import combinations
 
 boss = []
-for l in [a.strip() for a in open('day21.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-21.input', 'r').readlines()]:
     boss.append(int(l.split()[-1]))
 
 

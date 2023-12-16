@@ -10,7 +10,7 @@ def valid(pattern, occurences):
     return True
 
 t = 0
-lines = [a.strip() for a in open('day-012.input', 'r').readlines()]
+lines = [a.strip() for a in open('day-12.input', 'r').readlines()]
 cl = 0
 for l in lines:
     cl += 1

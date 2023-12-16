@@ -1,6 +1,6 @@
 import re
 
-lines = open('day-001.input').readlines()
+lines = open('day-01.input').readlines()
 
 t = 0
 

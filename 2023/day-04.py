@@ -10,7 +10,7 @@ class C:
 
 cards = []
 
-for l in open('day-004.input', 'r').readlines():
+for l in open('day-04.input', 'r').readlines():
     cc = l.strip().split(':')
     cc = cc[1].split('|')
     w = [int(c.strip()) for c in cc[0].strip().split()]

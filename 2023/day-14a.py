@@ -1,6 +1,6 @@
 rows = []
 
-for l in [a.strip() for a in open('day-014.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-14.input', 'r').readlines()]:
     rows.append(l)
 
 rows = [''.join(list(x)) for x in zip(*rows)]

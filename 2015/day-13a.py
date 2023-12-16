@@ -1,5 +1,5 @@
 m = {}
-for l in [a.strip() for a in open('day13.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-13.input', 'r').readlines()]:
     cc = l.split()
     n1 = cc[0]
     n2 = cc[-1][0:-1]

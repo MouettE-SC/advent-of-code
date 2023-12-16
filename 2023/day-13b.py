@@ -41,7 +41,7 @@ def p(lines, f):
 
 t = 0
 cp = []
-for l in [a.strip() for a in open('day-013.input').readlines()]:
+for l in [a.strip() for a in open('day-13.input').readlines()]:
     if not l:
         r1 = p(cp, 1)
         if r1:

@@ -1,6 +1,6 @@
 import re
 
-l = [a.strip() for a in open('day19.input', 'r').readlines()]
+l = [a.strip() for a in open('day-19.input', 'r').readlines()]
 
 m = l[-1]
 conv = {}

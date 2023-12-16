@@ -1,4 +1,4 @@
-target = int(open('day20.input').read())
+target = int(open('day-20.input').read())
 houses = [0 for _ in range(0, int(target/11+1))]
 
 for elf in range(1, len(houses)):

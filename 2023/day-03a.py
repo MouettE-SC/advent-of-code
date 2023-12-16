@@ -1,4 +1,4 @@
-r_lines = open('day-003.input', 'r').readlines()
+r_lines = open('day-03.input', 'r').readlines()
 lines = []
 for l in r_lines:
     lines.append([c for c in l.strip()])

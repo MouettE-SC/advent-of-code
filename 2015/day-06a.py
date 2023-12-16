@@ -4,7 +4,7 @@ lights = []
 for _ in range(0, 1000):
     lights.append([0 for _ in range(0, 1000)])
 
-for l in open('day06.input', 'r').readlines():
+for l in open('day-06.input', 'r').readlines():
     cc = l.strip().split(',')
     sc = (int(cc[0].split()[-1]), int(cc[1].split()[0]))
     ec = (int(cc[1].split()[-1]), int(cc[2]))

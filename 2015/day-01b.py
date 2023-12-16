@@ -1,6 +1,6 @@
 f = 0
 i = 1
-for c in open('day01.input', 'r').read():
+for c in open('day-01.input', 'r').read():
     if c == '(':
         f += 1
     else:

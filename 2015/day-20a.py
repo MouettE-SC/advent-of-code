@@ -1,4 +1,4 @@
-n = int(open('day20.input').read())
+n = int(open('day-20.input').read())
 
 
 def div(n):

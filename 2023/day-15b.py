@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-cc = open('day-015.input', 'r').read().split(',')
+cc = open('day-15.input', 'r').read().split(',')
 
 def h(s: str):
     r = 0

@@ -4,7 +4,7 @@ mb = 14
 
 t = 0
 
-for l in open('day-002.input', 'r').readlines():
+for l in open('day-02.input', 'r').readlines():
     l = l.strip()
     cc = l.split(':')
     g = int(cc[0].split(' ')[-1])

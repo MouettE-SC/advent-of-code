@@ -1,4 +1,4 @@
-lines = open('day-006.input', 'r').readlines()
+lines = open('day-06.input', 'r').readlines()
 time = int("".join(lines[0].split(':')[1].strip().split()))
 dist = int("".join(lines[1].split(':')[1].strip().split()))
 

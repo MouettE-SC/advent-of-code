@@ -34,7 +34,7 @@ def inc(pw):
     return "".join([chr(c) for c in v])
 
 
-p = open('day11.input', 'r').read()
+p = open('day-11.input', 'r').read()
 p = inc(p)
 
 while not valid(p):

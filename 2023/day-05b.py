@@ -1,4 +1,4 @@
-lines = open('day-005.input', 'r').readlines()
+lines = open('day-05.input', 'r').readlines()
 
 seeds = []
 c_map = {}

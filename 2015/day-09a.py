@@ -3,7 +3,7 @@ from operator import itemgetter
 t = 0
 it = {}
 st = ''
-for l in [a.strip() for a in open('day09.input', 'r')]:
+for l in [a.strip() for a in open('day-09.input', 'r')]:
     cc = l.split()
     if st == '':
         st = cc[0]

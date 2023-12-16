@@ -1,6 +1,6 @@
 r = {}
 
-for l in [a.strip() for a in open('day14.input').readlines()]:
+for l in [a.strip() for a in open('day-14.input').readlines()]:
     cc = l.split()
     r[cc[0]] = (int(cc[3]), int(cc[6]), int('-'+cc[13]))
 

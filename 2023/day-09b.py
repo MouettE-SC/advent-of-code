@@ -1,6 +1,6 @@
 t = 0
 
-for l in [a.strip() for a in open('day-009.input', 'r').readlines()]:
+for l in [a.strip() for a in open('day-09.input', 'r').readlines()]:
     rows = []
     cr = [int(a) for a in l.split()]
     rows.append(cr)

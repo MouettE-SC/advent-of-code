@@ -2,7 +2,7 @@ from operator import itemgetter
 
 t = 0
 it = {}
-for l in [a.strip() for a in open('day09.input', 'r')]:
+for l in [a.strip() for a in open('day-09.input', 'r')]:
     cc = l.split()
     if not cc[0] in it:
         it[cc[0]] = [(cc[2], int(cc[-1]))]
