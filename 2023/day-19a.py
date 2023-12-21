@@ -5,7 +5,6 @@ i_workflows, i_parts = open('day-19.input', 'r').read().split('\n\n')
 f_map = 'xmas'
 w = defaultdict(list)
 
-
 def parse_rule(tokens):
     res = []
     left = tokens.pop(0)
