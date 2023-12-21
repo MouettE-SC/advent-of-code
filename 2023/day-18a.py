@@ -56,30 +56,3 @@ for i, r in enumerate(grid):
             res += 1
 
 print(res)
-
-cols = [a.strip() for a in open('18.cols', 'r').readlines()]
-c_col = cols.pop(0)
-c_col_r = 0
-for j in range(len(grid[0])):
-    fill = False
-    r = ''.join([r[j] for r in grid])
-    rc = 0
-    for i, c in enumerate(r):
-        if c == '#':
-            rc += 1
-            if j > 0 and grid[i][j-1] == '#':
-                fill = not fill
-        elif fill:
-            rc += 1
-    c_col_r += rc
-    if '-' in c_col:
-        if int(c_col.split('-')[1]) == j:
-            print(f'{c_col}: {c_col_r}')
-            c_col_r = 0
-            c_col = cols.pop(0) if cols else None
-    else:
-        print(f'{c_col}: {c_col_r}')
-        c_col_r = 0
-        c_col = cols.pop(0) if cols else None
-
-

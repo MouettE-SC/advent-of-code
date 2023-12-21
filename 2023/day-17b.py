@@ -79,24 +79,24 @@ while h:
     if node.seen:
         continue
     for cd, nn in node.next():
-        k = (nn.i, nn.j, nn.direction, nn.moves)
+        k = (nn.n, nn.j, nn.direction, nn.moves)
         if cd:
             try:
                 if nn.direction == 'UP':
-                    nd = node.distance + sum(grid[i][node.j] for i in range(node.i-nn.moves, node.i))
+                    nd = node.distance + sum(grid[i][node.j] for i in range(node.n - nn.moves, node.n))
                 elif nn.direction == 'LEFT':
-                    nd = node.distance + sum(grid[node.i][j] for j in range(node.j - nn.moves, node.j))
+                    nd = node.distance + sum(grid[node.n][j] for j in range(node.j - nn.moves, node.j))
                 elif nn.direction == 'DOWN':
-                    nd = node.distance + sum(grid[i][node.j] for i in range(node.i+1, node.i + nn.moves + 1))
+                    nd = node.distance + sum(grid[i][node.j] for i in range(node.n + 1, node.n + nn.moves + 1))
                 elif nn.direction == 'RIGHT':
-                    nd = node.distance + sum(grid[node.i][j] for j in range(node.j + 1, node.j + nn.moves + 1))
+                    nd = node.distance + sum(grid[node.n][j] for j in range(node.j + 1, node.j + nn.moves + 1))
             except IndexError:
                 print("oups")
         else:
-            nd = node.distance + grid[nn.i][nn.j]
+            nd = node.distance + grid[nn.n][nn.j]
         if nd < nn.distance:
             nn.distance = nd
-        heappush(h, (nn.distance, nn.i, nn.j, nn.direction, nn.moves))
+        heappush(h, (nn.distance, nn.n, nn.j, nn.direction, nn.moves))
     node.seen = True
 
 

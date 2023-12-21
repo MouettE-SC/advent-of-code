@@ -77,10 +77,10 @@ while h:
     if node.seen:
         continue
     for nn in node.next():
-        k = (nn.i, nn.j, nn.direction, nn.moves)
-        if node.distance + grid[nn.i][nn.j] < nn.distance:
-            nn.distance = node.distance + grid[nn.i][nn.j]
-            heappush(h, (nn.distance, nn.i, nn.j, nn.direction, nn.moves))
+        k = (nn.n, nn.j, nn.direction, nn.moves)
+        if node.distance + grid[nn.n][nn.j] < nn.distance:
+            nn.distance = node.distance + grid[nn.n][nn.j]
+            heappush(h, (nn.distance, nn.n, nn.j, nn.direction, nn.moves))
     node.seen = True
 
 
