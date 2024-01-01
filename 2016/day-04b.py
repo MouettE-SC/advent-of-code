@@ -16,5 +16,13 @@ for s, h in [a.strip()[0:-1].split('[') for a in open('day-04.input', 'r').readl
     for c in sorted(rep.keys(), reverse=True):
         rh += ''.join(sorted(rep[c]))
     if h == rh[0:5]:
-        print(name)
+        d_name = ''
+        for c in name:
+            if c == '-':
+                d_name += ' '
+            else:
+                d_name += chr((ord(c) - 97 + id) % 26 + 97)
+        if d_name == 'northpole object storage':
+            print(id)
+            break
 
